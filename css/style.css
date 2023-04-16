@@ -25,8 +25,35 @@ body {
     font-family: var(--font-body);
 }
 
-.main__section{
+.main{
     height: 100%;
     padding: 40px;
 }
 
+.main__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content__header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.header{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    align-items:center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    color: var(--font-color-title);
+    font-weight: bold;
+    font-size: 32px;
+}

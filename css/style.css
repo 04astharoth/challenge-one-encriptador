@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root {
+    --bg-body: #F3F5FC;
+    --bg-white:#fff;
+    --bg-gray:#495057;
+    --bg-primary:#0A3871;
+    --bg-primary-hover:#052051;
+    --bg-blue-light:#D8DFE8;
+    --bg-blue-light-hover:#AAB2D5;
+    --font-body: 'Inter', sans-serif;
+    --font-color-title:#0A3871;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color:var(--bg-body);
+    font-family: var(--font-body);
+}
+
+.main__section{
+    height: 100%;
+    padding: 40px;
+}
+

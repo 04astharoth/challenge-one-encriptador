@@ -10,24 +10,48 @@
   </head>
   <body>
     <div class="main">
-      <div class="main__section">
-        <div class="content__header">
-          <header class="header">
-            <img src="./img/logo.svg" alt="" />
-            <h1>Cifrador de Texto</h1>
-          </header>
+      <div class="content__logo">
+        <img class="logo" src="./img/logo.svg" alt="" />
+      </div>
+      <div class="content__main">
+        <div class="title">
+          <h1>Cifrador de Texto</h1>
         </div>
-        <div class="content__area">
+        <div class="content__body">
           <textarea id="txt__area" cols="30" rows="10" placeholder="ingrese el texto aqui"></textarea>
           <div class="content__btn">
-            <div class="hint__lbl">aca va el texto tip sobre el texto</div>
-            <button>Cifrar</button>
-            <button>Decifrar</button>
+            <div class="content__hint">
+              <span class="iconify" data-icon="bi:exclamation-circle-fill"></span>
+              <span class="lbl__hint">Solo letras minusculas y sin acento.</span>
+            </div>
+            <input class="btn btn__cifrar" type="button" onclick="cifrar()" value="Cifrar" />
+            <input class="btn btn__decifrar" type="button" onclick="decrifrar()" value="Decifrar" />
           </div>
         </div>
       </div>
-      <div class="aside__section"></div>
-   </div>
-   <footer>ELABORADO POR JGVM</footer>
+      <div class="content__side">
+        <div class="content__messages">
+          <div class="content__image">
+            <img src="./img/Muñeco.svg" alt="" />
+            <div class="content_text">
+              <h2>Ningún mensaje fue encontrado</h2>
+              <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+          </div>
+          <div class="content_result">
+            <h3 id="result">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. In
+              perspiciatis fugit architecto adipisci qui dolores molestias iste,
+              natus ut corrupti sit ipsam officia, ab minus harum cumque maxime,
+              accusamus officiis.
+            </h3>
+            <input type="button" value="Copiar" class="btn btn__copy" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>ELABORADO POR JGVM</footer>
+    <!-- JS -->
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
   </body>
 </html>

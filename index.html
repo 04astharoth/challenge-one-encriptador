@@ -1,59 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Encriptador</title>
-	<!-- CSS -->
-	<link rel="stylesheet" href="./css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-	<div class="main">
-	  <div class="content__logo">
-		<img class="logo" src="./img/logo.svg" alt="" />
-	  </div>
-	  <div class="content__main">
-		<div class="title">
-		  <h1>Cifrador de Texto</h1>
-		</div>
-		<div class="content__body">
-		  <textarea id="txt__area" cols="30" rows="10" placeholder="ingrese el texto aqui"></textarea>
-		  <div class="content__optionpane">
-			<div class="content__hint">
-			  <span class="iconify" data-icon="bi:exclamation-circle-fill"></span>
-			  <span class="lbl__hint">Solo letras minusculas y sin acento.</span>
-			</div>
-			<div class="content__btn">
-			  <input class="btn btn__primary" type="button" onclick="cifrar()" value="Cifrar" />
-			  <input class="btn btn__secondary" type="button" onclick="decrifrar()" value="Decifrar" />
-			</div>
-		  </div>
-		</div>
-	  </div>
-	  <div class="content__side">
-		<div class="content__messages">
-		  <div class="content__notfound">
-			<img class="vector" src="./img/Muñeco.svg" alt="" />
-			<div class="content_text">
-			  <h3>Ningún mensaje fue encontrado</h3>
-			  <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-			</div>
-		  </div>
-		  <div class="content__found">
-			<h3 id="result">
-			  Lorem, ipsum dolor sit amet consectetur adipisicing elit. In
-			  perspiciatis fugit architecto adipisci qui dolores molestias iste,
-			  natus ut corrupti sit ipsam officia, ab minus harum cumque maxime,
-			  accusamus officiis.
-			</h3>
-			<input type="button" value="Copiar" class="btn btn__secondary" />
-		  </div>
-		</div>
-	  </div>
-	</div>
-	<footer>ELABORADO POR JGVM</footer>
-	<!-- JS -->
-	<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <div class="main">
+        <!-- Panel Logo -->
+      <div class="content__logo">
+        <img class="logo" src="./img/logo.svg" alt="" />
+      </div>
+      <!-- Panel Principal -->
+      <div class="content__main">
+        <div class="main__body">
+          <h1 class="title">Cifrador de Texto</h1>
+          <div class="content__body">
+            <textarea id="txt__area" cols="30" rows="10" placeholder="ingrese el texto aqui"></textarea>
+            <div class="content__optionpane">
+              <div class="content__hint">
+                <span class="iconify" data-icon="bi:exclamation-circle-fill"></span>
+                <span class="lbl__hint">Solo letras minusculas y sin acento.</span>
+              </div>
+              <div class="content__btn">
+                <input class="btn btn__primary" type="button" onclick="cifrar()" value="Cifrar" />
+                <input class="btn btn__secondary" type="button" onclick="decrifrar()" value="Decifrar" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Panel lateral -->
+      <div class="content__side">
+        <div class="content__messages">
+          <div class="content__notfound">
+            <img class="vector" src="./img/Muñeco.svg" alt="" />
+            <div class="content_text">
+              <h3>Ningún mensaje fue encontrado</h3>
+              <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+          </div>
+          <!-- <div class="content__found">
+              <h3 id="result">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. In
+              perspiciatis fugit architecto adipisci qui dolores molestias iste,
+              natus ut corrupti sit ipsam officia, ab minus harum cumque maxime,
+              accusamus officiis.
+            </h3>
+            <input type="button" value="Copiar" class="btn btn__secondary" />
+          </div> -->
+        </div>
+      </div>
+      <!-- Fin Panel Lateral -->
+      <footer>
+        <h3>Oracle Next Education - G5</h3>
+        <p>Elaborado por <b>Jose Gil Varon Moreno</b></p>
+        <div class="content__networks">
+          <a href="https://www.linkedin.com/in/jgvm91/" target="_blank" rel="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/04astharoth/" target="_blank" rel="Github"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </footer>
+    </div>
+    <!-- Main JS -->
+    <!-- Fontawesome & Icons JS-->
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script src="https://kit.fontawesome.com/e905f60368.js" crossorigin="anonymous"></script>
   </body>
 </html>

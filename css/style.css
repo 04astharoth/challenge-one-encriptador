@@ -36,7 +36,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
-  border: 2px solid blue;
+  border: 2px solid var(--bg-primary);
 }
 
 .btn__primary {
@@ -169,6 +169,7 @@
 .content__side .content__messages .content__notfound{
   /* display: flex; */  
   /* flex-direction: column; */
+  display: none;
 }
 
 .content__messages .content__notfound .vector{
@@ -185,8 +186,18 @@
 }
 
 .content__side .content__messages .content__found {
-
+  /* display: none; */
+  height: 100%;
 }
+.content__side .content__messages .content__found .content__result {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  font-size:larger;
+}
+
 
 /* Diseño pie de pagina */
 footer {
@@ -214,3 +225,4 @@ a:link,
 a:visited {
   color: var(--bg-gray);
 }
+

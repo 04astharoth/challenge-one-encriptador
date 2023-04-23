@@ -20,6 +20,10 @@
 }
 
 /* Estilos utilitarios */
+.hidden{
+  display: none;
+}
+
 /* Estilos de Botones */
 .main .content__btn {
   display: flex;
@@ -157,12 +161,13 @@ a:visited {
   color: var(--bg-gray);
 }
 
+/* panel lateral */
 .content__side {
   display: flex;
   flex: 0 0 calc(25%);
   height: calc(85%);
   padding: 1.75em 1.75em 1.75em 0;
-  border: 1px solid #0e770e; /* Asigna un borde verde a contenedor */
+  border: 1px solid #0e770e;
 }
 
 .content__side .content__messages {
@@ -176,9 +181,9 @@ a:visited {
   box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 }
 
-.content__side .content__messages .content__notfound {
+/* .content__side .content__messages .content__notfound {
   display: none;
-}
+} */
 
 .content__notfound .vector {
   width: 100%;
@@ -194,7 +199,6 @@ a:visited {
 }
 
 .content__side .content__messages .content__found {
-  /* display: none; */
   min-height: 100%;
   height: auto;
 }
@@ -237,17 +241,13 @@ footer .content__networks a > * {
   font-weight: 900;
 }
 
-/* Min-width: 320px (smaller phone viewpoints)
-Min-width: 480px (small devices and most phones)
-Min-width: 768px (most tablets)
-Min-width: 992px (smaller desktop viewpoints)
-Min-width: 1200px (large devices and wide screens) */
 
+/* Diseño para Tablet */
 @media screen and (max-width: 768px) {
   .main .btn {
     font-size: large;
   }
-
+  
   .main {
     min-height: 100vh;
     height: auto;
@@ -262,27 +262,27 @@ Min-width: 1200px (large devices and wide screens) */
     width: 20%;
     flex: 0 0 auto;
   }
-
+  
   .content__main {
     height: 70%;
     width: 100%;
     flex: 0 0 auto;
   }
-
+  
   .content__main .main__body {
     padding: 5%;
     margin: 0;
     height: 100%;
     width: 100%;
   }
-
+  
   .content__side {
-    padding: 1.75em;
+    padding: 5%;
     height: 20%;
     width: 100%;
     flex: 0 0 auto;
   }
-
+  
   .content__side .content__messages {
     width: 100%;
   }
@@ -294,7 +294,7 @@ Min-width: 1200px (large devices and wide screens) */
   .content__side .content__messages .content__found .content__result {
     gap: 2em;
   }
-
+  
   footer {
     order: -1;
     min-height: 100%;
@@ -304,6 +304,7 @@ Min-width: 1200px (large devices and wide screens) */
   }
 }
 
+/* Diseño para celulares */
 @media screen and (max-width: 376px) {
   .content__logo {
     padding-top: 0;
@@ -312,8 +313,14 @@ Min-width: 1200px (large devices and wide screens) */
   footer p {
     font-size: small;
   }
-
+  
   .main .content__btn {
     flex-direction: column;
   }
 }
+
+/* Min-width: 320px (smaller phone viewpoints)
+Min-width: 480px (small devices and most phones)
+Min-width: 768px (most tablets)
+Min-width: 992px (smaller desktop viewpoints)
+Min-width: 1200px (large devices and wide screens) */

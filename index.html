@@ -23,11 +23,11 @@
             <div class="content__optionpane">
               <div class="content__hint">
                 <span class="iconify" data-icon="bi:exclamation-circle-fill"></span>
-                <span class="lbl__hint">Solo letras minusculas y sin acento.</span>
+                <span class="lbl__hint">Solo letras minúsculas, sin acentos y sin caracteres especiales.</span>
               </div>
               <div class="content__btn">
-                <input class="btn btn__primary" type="button" onclick="cifrar()" value="Cifrar" />
-                <input class="btn btn__secondary" type="button" onclick="decrifrar()" value="Decifrar" />
+                <input id="btn_cifrar" class="btn btn__primary" type="button" value="Cifrar" />
+                <input id="btn_decifrar" class="btn btn__secondary" type="button" value="Decifrar" />
               </div>
             </div>
           </div>
@@ -48,7 +48,7 @@
               <span id="result">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente praesentium quo officia obcaecati voluptates esse accusantium inventore aliquam! Quos atque tempora voluptates, accusamus repellat odit pariatur sit mollitia minus minima.
               </span>
-              <input type="button" value="Copiar" class="btn btn__secondary" />
+              <input id="btn_copy" class="btn btn__secondary" type="button" value="Copiar" />
             </div>
           </div>
         </div>
@@ -63,7 +63,9 @@
         </div>
       </footer>
     </div>
+    <div id="toast">Texto copiado en el portapapeles</div>
     <!-- Main JS -->
+    <script src="./js/main.js"></script>
     <!-- Fontawesome & Icons JS-->
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
     <script src="https://kit.fontawesome.com/e905f60368.js" crossorigin="anonymous"></script>

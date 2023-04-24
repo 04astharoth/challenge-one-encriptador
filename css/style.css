@@ -117,7 +117,6 @@ a:visited {
   align-items: center;
   flex: 0 0 calc(65%);
   height: calc(85%);
-  border: 2px solid #dd3e8e;
 }
 
 .content__main .main__body {
@@ -126,14 +125,12 @@ a:visited {
   flex-direction: column;
   height: calc(100% - 14vh);
   margin-top: 14vh;
-  border: 2px solid #ff5e00;
 }
 
 .main__body .title {
   height: 10%;
   text-align: center;
   color: var(--bg-primary);
-  border: 2px solid #dd3e8e;
 }
 
 .main__body .content__body {
@@ -142,7 +139,6 @@ a:visited {
   padding-top: 2em;
   padding-bottom: 2em;
   height: 90%;
-  border: 2px solid #1c5eda;
 }
 
 .content__main .content__body textarea {
@@ -155,7 +151,6 @@ a:visited {
   text-transform: lowercase;
   width: 100%;
   height: 100%;
-  border: 2px solid yellowgreen;
 }
 
 .content__main .content__body textarea::placeholder {
@@ -167,7 +162,6 @@ a:visited {
   display: flex;
   flex-direction: column;
   padding-top: 1em;
-  border: 2px solid #000000;
 }
 
 .content__main .content__body .content__optionpane .content__hint {
@@ -184,7 +178,6 @@ a:visited {
   flex: 0 0 calc(25%);
   height: calc(85%);
   padding: 1.75em 1.75em 1.75em 0;
-  border: 1px solid #0e770e;
 }
 
 .content__side .content__messages {
@@ -199,10 +192,6 @@ a:visited {
   min-width: 100%;
   width: auto;
 }
-
-/* .content__side .content__messages .content__notfound {
-  display: none;
-} */
 
 .content__notfound .vector {
   width: 100%;

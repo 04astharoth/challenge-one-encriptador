@@ -29,8 +29,10 @@
 
 #toast {
   position: fixed;
-  bottom: 20px;
-  left: 50%;
+  bottom: 80px;
+  left: 87%;
+  width: 230px;
+  text-align: center;
   transform: translateX(-50%);
   background-color: #333;
   color: #fff;
@@ -240,9 +242,10 @@ footer > h3,p {
 
 footer .content__networks{
   display: flex;
-  height: 20vh;
+  height: 100%;
 	justify-content: center;
 	align-items: center;
+  margin: 8px;
 }
 
 .content__networks ul li{
@@ -330,6 +333,12 @@ footer .content__networks{
   .content__side .content__messages .content__found .content__result {
     gap: 2em;
   }
+
+  #toast {
+    bottom: 180px;
+    left: 50%;
+    width: 50%;
+  }
   
   footer {
     order: -1;
@@ -337,6 +346,15 @@ footer .content__networks{
     height: auto;
     width: 80%;
     flex: 0 0 auto;
+  }
+
+  footer .content__networks ul li{
+    width: 40px;
+    height: 40px;
+  }
+
+  .content__networks ul li a{
+    line-height: 40px;
   }
 }
 
